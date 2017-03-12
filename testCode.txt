@@ -1,0 +1,17 @@
+package tester;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import exp1.Triangle;
+
+public class TestTriangle {
+    @Test
+    public void testTriangle() {
+        assertEquals("not a triganle",new Triangle().Triangle(1,2,3));
+        assertEquals("equilateral triangle",new Triangle().Triangle(3,3,3));
+        assertEquals("isosceles triangle",new Triangle().Triangle(4,4,5));
+        assertEquals("scalene triangle",new Triangle().Triangle(2,3,4));
+    }
+}
